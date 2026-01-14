@@ -106,7 +106,6 @@ export default defineConfig([
       'unicorn/no-null': 'error',
       'unicorn/prefer-node-protocol': 'error',
       'unicorn/prefer-top-level-await': 'error',
-	  'unicorn/number-literal-case': 'off',
 
       // 🎨 Styles
       'quotes': ['error', 'single', { avoidEscape: true }],
@@ -125,11 +124,11 @@ export default defineConfig([
       'unicorn/no-array-reduce': 'off',
       'unicorn/no-array-for-each': 'off',
       'unicorn/filename-case': 'off',
+      'unicorn/number-literal-case': 'off',
       'unicorn/prefer-query-selector': 'warn',
       '@typescript-eslint/no-misused-promises': 'off', //* switched off for now
       '@typescript-eslint/restrict-template-expressions': 'off', //* switched off for now
       '@typescript-eslint/no-inferrable-types': 'error',
-
     },
   },
   {
