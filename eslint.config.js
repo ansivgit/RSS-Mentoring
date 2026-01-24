@@ -124,6 +124,7 @@ export default defineConfig([
       'unicorn/no-array-reduce': 'off',
       'unicorn/no-array-for-each': 'off',
       'unicorn/filename-case': 'off',
+      'unicorn/number-literal-case': 'off',
       'unicorn/prefer-query-selector': 'warn',
       '@typescript-eslint/no-misused-promises': 'off', //* switched off for now
       '@typescript-eslint/restrict-template-expressions': 'off', //* switched off for now
