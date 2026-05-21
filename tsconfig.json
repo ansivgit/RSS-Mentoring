@@ -4,8 +4,13 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
     "skipLibCheck": true,
+    "incremental": true,
+    "types": ["vite/client", "vite-plugin-svgr/client"],
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -25,9 +30,10 @@
     "noUncheckedSideEffectImports": true,
     "strictPropertyInitialization": true,
     "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "out"]
+  "include": [
+    "./vite.config.ts"
+  ],
+  "exclude": ["node_modules"]
 }
-

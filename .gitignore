@@ -11,7 +11,6 @@ node_modules/
 # compiled output
 dist/
 build/
-out/
 
 # OS
 .DS_Store
