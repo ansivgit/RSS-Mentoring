@@ -39,15 +39,6 @@ export default defineConfig([
       'react': { version: 'detect' },
     },
     plugins: {
-      // 'react': react,
-      // 'react-hooks': reactHooks,
-      // 'react-refresh': reactRefresh,
-      // 'import': importPlugin,
-      // 'vitest': vitest,
-      // 'sort-exports': sortExports,
-      // 'import-newlines': importNewlines,
-      // '@stylistic': stylistic,
-      // 'unicorn': eslintPluginUnicorn,
     },
     linterOptions: {
       noInlineConfig: true,
@@ -72,6 +63,10 @@ export default defineConfig([
       '@typescript-eslint/no-unsafe-member-access': 'error',
       '@typescript-eslint/no-unsafe-return': 'error',
       '@typescript-eslint/no-unsafe-call': 'error',
+      '@typescript-eslint/no-confusing-void-expression': [
+        'error',
+        { ignoreArrowShorthand: true },
+      ],
 
       'react-hooks/exhaustive-deps': 'warn',
 
@@ -128,6 +123,8 @@ export default defineConfig([
       'unicorn/filename-case': 'off',
       'unicorn/number-literal-case': 'off',
       'unicorn/prefer-query-selector': 'off',
+      'unicorn/prevent-abbreviations': 'off',
+      'unicorn/explicit-length-check': 'off',
     },
   },
   {
@@ -141,6 +138,7 @@ export default defineConfig([
     files: ['**/*.test.ts', '**/*.test.tsx'],
     rules: {
       'max-lines-per-function': 'off',
+      '@typescript-eslint/consistent-type-assertions': 'off',
     },
   },
   {
@@ -149,8 +147,7 @@ export default defineConfig([
       '**/dist/**',
       '**/build/**',
       '**/*.d.ts',
-      'eslint.config.js',
-      'lint-staged.config.js',
+      '*.config.js',
     ],
   },
 ]);
