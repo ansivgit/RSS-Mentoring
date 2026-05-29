@@ -20,6 +20,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.ts'",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
     "stylelint:fix": "npx stylelint \"**/*.css\" --fix"
   },
